@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+  </head>
+  <body bgcolor="#EAF2FF">
+    <center>
+      <h1>
+        <font color="blue"> Student Registration Form </font>
+      </h1>
+      <h3>Please Fill Your Details</h3>
+      <hr width="70%" color="blue" />
+    </center>
+    <br />
+    <center>
+      <table
+        border="1"
+        cellpadding="12"
+        cellspacing="0"
+        width="600"
+        bgcolor="white"
+      >
+        <tr bgcolor="#3157C8">
+          <th colspan="2">
+            <font color="white" size="5"> Registration Details </font>
+          </th>
+        </tr>
+        <form>
+          <!--Name-->
+          <tr>
+            <td><b>Student Name:</b></td>
+            <td>
+              <input
+                type="text"
+                name="studentname"
+                placeholder="Enter your name"
+                size="30"
+                required
+              />
+            </td>
+          </tr>
+          <!--Email-->
+          <tr>
+            <td><b>Email Address:</b></td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                size="30"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><b>Password:</b></td>
+            <td>
+              <input
+                type="password"
+                name="password"
+                placeholder="Enter password"
+                size="30"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><b>Mobile Number:</b></td>
+            <td>
+              <input
+                type="tel"
+                name="mobile"
+                placeholder="Enter mobile number"
+                size="30"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><b>Date of Birth:</b></td>
+            <td>
+              <input type="date" name="dob" />
+            </td>
+          </tr>
+          <tr>
+            <td><b>Gender:</b></td>
+            <td>
+              <input type="radio" name="gender" value="Male" /> Male
+              <input type="radio" name="gender" value="Female" /> Female
+              <input type="radio" name="gender" value="Other" /> Other
+            </td>
+          </tr>
+          <tr>
+            <td><b>Select Course:</b></td>
+            <td>
+              <select name="course" required>
+                <option value="">Select Course</option>
+                <option>BCA</option>
+                <option>BBA</option>
+                <option>B.Com</option>
+                <option>MCA</option>
+                <option>M.Sc. IT</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Hobbies:</b></td>
+            <td>
+              <input type="checkbox" name="hobby" value="Reading" /> Reading
+              <br />
+              <input type="checkbox" name="hobby" value="Sports" /> Sports
+              <br />
+              <input type="checkbox" name="hobby" value="Music" /> Music
+            </td>
+          </tr>
+          <tr>
+            <td><b>Address:</b></td>
+            <td>
+              <textarea
+                name="address"
+                rows="4"
+                cols="30"
+                placeholder="Enter your address"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Upload Photo:</b></td>
+            <td>
+              <input type="file" name="photo" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <input type="submit" value="Register Now" />
+              &nbsp;&nbsp;
+              <input type="reset" value="Clear Form" />
+            </td>
+          </tr>
+        </form>
+      </table>
+    </center>
+    <br />
+    <center>
+      <hr width="70%" color="blue" />
+      <font color="gray"> © 2026 Student Registration Form </font>
+    </center>
+  </body>
+</html>
