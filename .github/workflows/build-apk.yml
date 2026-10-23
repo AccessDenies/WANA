@@ -27,7 +27,7 @@ jobs:
         java-version: '17'
 
     - name: Sync Capacitor Android
-      run: npx cap sync android
+      run: npx --prefix . npx cap sync android || ./node_modules/.bin/cap sync android
 
     - name: Build Android APK
       run: |
